@@ -1,6 +1,6 @@
 # log-sentry — documentation
 
-  <img src=".github/assets/togo-mark.svg" alt="togo" height="64" />
+Sentry error tracking for togo — captures kernel error events with stack traces
 
 ## Overview
 
@@ -21,19 +21,18 @@ Set `LOG_DRIVER=sentry`.
 
 ## Configuration
 
-Environment variables read by this plugin (extracted from the source):
+Environment variables read by this plugin (extracted from the source — see the gateway/provider docs for each value):
 
-| Env var | Notes |
-|---|---|
-| `G` | _see provider docs_ |
-| `SENTRY_DSN` | _see provider docs_ |
-| `SENTRY_ENVIRONMENT` | _see provider docs_ |
-| `SENTRY_RELEASE` | _see provider docs_ |
+| Env var |
+|---|
+| `SENTRY_DSN"` |
+| `SENTRY_ENVIRONMENT"` |
+| `SENTRY_RELEASE"` |
 
 ## Usage
 
 ```go
-// Structured logs/errors are forwarded to the configured sink automatically
+// Structured logs/errors forward to the configured sink automatically
 // once this driver is installed and its env is set.
 ```
 
@@ -41,4 +40,4 @@ Environment variables read by this plugin (extracted from the source):
 
 - Marketplace: https://to-go.dev/marketplace
 - Source: https://github.com/togo-framework/log-sentry
-- README: ../README.md
+- Full README: ../README.md
