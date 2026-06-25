@@ -25,9 +25,9 @@ Environment variables read by this plugin (extracted from the source — see the
 
 | Env var |
 |---|
-| `SENTRY_DSN"` |
-| `SENTRY_ENVIRONMENT"` |
-| `SENTRY_RELEASE"` |
+| `SENTRY_DSN` |
+| `SENTRY_ENVIRONMENT` |
+| `SENTRY_RELEASE` |
 
 ## Usage
 
